@@ -1,0 +1,11 @@
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\bin\Debug\net10.0\SistemaImpresion.Dominio.deps.json
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\bin\Debug\net10.0\SistemaImpresion.Dominio.dll
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\bin\Debug\net10.0\SistemaImpresion.Dominio.pdb
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\SistemaImpresion.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\SistemaImpresion.Dominio.AssemblyInfoInputs.cache
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\SistemaImpresion.Dominio.AssemblyInfo.cs
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\SistemaImpresion.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\SistemaImpresion.Dominio.dll
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\refint\SistemaImpresion.Dominio.dll
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\SistemaImpresion.Dominio.pdb
+C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Dominio\obj\Debug\net10.0\ref\SistemaImpresion.Dominio.dll

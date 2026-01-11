@@ -1,0 +1,278 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "SistemaImpresion.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Impresion/solicitar": {
+      "post": {
+        "tags": [
+          "Impresion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudImpresionDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudImpresionDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudImpresionDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaAutorizacionDTO"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaAutorizacionDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Impresion/confirmar": {
+      "post": {
+        "tags": [
+          "Impresion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmacionImpresionDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmacionImpresionDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmacionImpresionDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaDTO"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Impresion/{id}": {
+      "get": {
+        "tags": [
+          "Impresion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ConfirmacionImpresionDTO": {
+        "type": "object",
+        "properties": {
+          "ImpresionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Exitosa": {
+            "type": "boolean"
+          },
+          "Resultado": {
+            "type": "string",
+            "nullable": true
+          },
+          "MensajeError": {
+            "type": "string",
+            "nullable": true
+          },
+          "FechaEjecucion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "RespuestaAutorizacionDTO": {
+        "type": "object",
+        "properties": {
+          "Autorizada": {
+            "type": "boolean"
+          },
+          "ImpresionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ContenidoZPL": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cantidad": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "MotivoDenegacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "Mensaje": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespuestaDTO": {
+        "type": "object",
+        "properties": {
+          "Exitosa": {
+            "type": "boolean"
+          },
+          "Mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "Datos": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SolicitudImpresionDTO": {
+        "type": "object",
+        "properties": {
+          "IdentificadorMaquina": {
+            "type": "string",
+            "nullable": true
+          },
+          "NumeroEmpleado": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "DireccionIP": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Impresion"
+    }
+  ]
+}

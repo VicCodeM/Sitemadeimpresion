@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SistemaImpresion.API/SistemaImpresion.API.csproj" />
+    <Project Path="src/SistemaImpresion.AppProduccion/SistemaImpresion.AppProduccion.csproj" />
+    <Project Path="src/SistemaImpresion.Datos/SistemaImpresion.Datos.csproj" />
+    <Project Path="src/SistemaImpresion.Dominio/SistemaImpresion.Dominio.csproj" />
+    <Project Path="src/SistemaImpresion.Negocio/SistemaImpresion.Negocio.csproj" />
+    <Project Path="src/SistemaImpresion.Web/SistemaImpresion.Web.csproj" />
+  </Folder>
+</Solution>

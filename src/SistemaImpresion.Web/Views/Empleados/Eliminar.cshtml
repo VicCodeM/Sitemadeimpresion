@@ -1,0 +1,70 @@
+@model SistemaImpresion.Dominio.Entidades.Empleado
+@{
+    ViewData["Title"] = "Eliminar Empleado";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; }
+        .navbar { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar h1 { font-size: 20px; }
+        .btn-volver { background: rgba(255,255,255,0.2); color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; }
+        .container { max-width: 600px; margin: 30px auto; padding: 0 20px; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .alert { background: #fff3cd; border: 1px solid #ffc107; color: #856404; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .detalle { margin: 20px 0; }
+        .detalle-item { padding: 10px; border-bottom: 1px solid #eee; }
+        .detalle-item:last-child { border-bottom: none; }
+        .detalle-label { font-weight: 600; color: #666; margin-right: 10px; }
+        .btn { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; text-decoration: none; display: inline-block; }
+        .btn-danger { background: #f44336; color: white; }
+        .btn-secondary { background: #6c757d; color: white; margin-left: 10px; }
+        .btn-danger:hover { background: #da190b; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Eliminar Empleado</h1>
+        <a href="@Url.Action("Index")" class="btn-volver">← Volver</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="alert">
+                <strong>⚠️ Advertencia:</strong> Esta acción no se puede deshacer. ¿Está seguro de eliminar este empleado?
+            </div>
+
+            <div class="detalle">
+                <div class="detalle-item">
+                    <span class="detalle-label">Número:</span>
+                    <span>@Model.NumeroEmpleado</span>
+                </div>
+                <div class="detalle-item">
+                    <span class="detalle-label">Nombre:</span>
+                    <span>@Model.NombreCompleto</span>
+                </div>
+                <div class="detalle-item">
+                    <span class="detalle-label">Departamento:</span>
+                    <span>@Model.Departamento</span>
+                </div>
+                <div class="detalle-item">
+                    <span class="detalle-label">Puesto:</span>
+                    <span>@Model.Puesto</span>
+                </div>
+            </div>
+
+            <form asp-action="Eliminar" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">Confirmar Eliminación</button>
+                <a href="@Url.Action("Index")" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

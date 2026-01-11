@@ -1,0 +1,171 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SistemaImpresion.Web
+build_property.RootNamespace = SistemaImpresion.Web
+build_property.ProjectDir = C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Victor\Desktop\SistemaImpresion\src\SistemaImpresion.Web
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Empleados/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Empleados/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Empleados/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Empleados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Etiquetas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Etiquetas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Etiquetas/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Etiquetas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Impresoras/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Impresoras/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Impresoras/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Impresoras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzb3Jhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Lotes/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG90ZXNcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Lotes/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG90ZXNcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Lotes/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG90ZXNcRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Lotes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG90ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Maquinas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWluYXNcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Maquinas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWluYXNcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Maquinas/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWluYXNcRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Maquinas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWluYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Reglas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnbGFzXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Reglas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnbGFzXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Reglas/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnbGFzXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Reglas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnbGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Reportes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Usuarios/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Usuarios/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Usuarios/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Victor/Desktop/SistemaImpresion/src/SistemaImpresion.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-igxw7iog6c

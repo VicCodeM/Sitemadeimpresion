@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SistemaImpresion.AppProduccion/1.0.0": {
+        "dependencies": {
+          "SistemaImpresion.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "SistemaImpresion.AppProduccion.dll": {}
+        }
+      },
+      "SistemaImpresion.Dominio/1.0.0": {
+        "runtime": {
+          "SistemaImpresion.Dominio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SistemaImpresion.AppProduccion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaImpresion.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,191 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    var nombreUsuario = User.FindFirst("NombreCompleto")?.Value ?? User.Identity?.Name ?? "Usuario";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sistema de Impresión</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar h1 {
+            font-size: 20px;
+        }
+        .navbar .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .btn-logout {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn-logout:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .container {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .card .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .card .description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .btn-card {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        .btn-card:hover {
+            transform: translateY(-2px);
+        }
+        .welcome-banner {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .welcome-banner h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .welcome-banner p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Sistema de Impresion Zebra</h1>
+        <div class="user-info">
+            <span>Bienvenido, @nombreUsuario</span>
+            <form method="post" asp-action="Logout" asp-controller="Auth" style="display: inline;">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn-logout">Cerrar Sesion</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-banner">
+            <h2>Panel de Control</h2>
+            <p>Gestion centralizada del sistema de impresion industrial</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Maquinas</h3>
+                <p class="description">Gestionar PCs de produccion y asignaciones</p>
+                <a href="@Url.Action("Index", "Maquinas")" class="btn-card">Administrar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🖨</div>
+                <h3>Impresoras</h3>
+                <p class="description">Configurar impresoras Zebra conectadas</p>
+                <a href="@Url.Action("Index", "Impresoras")" class="btn-card">Administrar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏷</div>
+                <h3>Etiquetas</h3>
+                <p class="description">Gestionar plantillas ZPL de etiquetas</p>
+                <a href="@Url.Action("Index", "Etiquetas")" class="btn-card">Administrar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📦</div>
+                <h3>Lotes</h3>
+                <p class="description">Administrar lotes de produccion</p>
+                <a href="@Url.Action("Index", "Lotes")" class="btn-card">Administrar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">👥</div>
+                <h3>Empleados</h3>
+                <p class="description">Gestionar empleados de planta</p>
+                <a href="@Url.Action("Index", "Empleados")" class="btn-card">Administrar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔐</div>
+                <h3>Usuarios</h3>
+                <p class="description">Administrar usuarios del sistema</p>
+                <a href="@Url.Action("Index", "Usuarios")" class="btn-card">Administrar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙</div>
+                <h3>Reglas</h3>
+                <p class="description">Configurar autorizaciones de impresion</p>
+                <a href="@Url.Action("Index", "Reglas")" class="btn-card">Administrar</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Reportes</h3>
+                <p class="description">Ver estadisticas y auditoria completa</p>
+                <a href="@Url.Action("Index", "Reportes")" class="btn-card">Ver Reportes</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
